@@ -1,5 +1,44 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+
+## Environment Setup
+
+This project requires certain environment variables to be set for proper functioning. Create a `.env` file in the root of the project and add the following variables:
+
+```plaintext
+# Database Configuration
+DATABASE_URL=mongodb://yourMongoDBURLHere
+
+# Authentication
+NEXTAUTH_JWT_SECRET=yourJWTSecretHere
+NEXTAUTH_SECRET=yourNextAuthSecretHere
+
+# OAuth Configuration for GitHub
+GITHUB_ID=yourGitHubClientIdHere
+GITHUB_SECRET=yourGitHubClientSecretHere
+
+# OAuth Configuration for Google
+GOOGLE_CLIENT_ID=yourGoogleClientIdHere
+GOOGLE_CLIENT_SECRET=yourGoogleClientSecretHere
+```
+
+## Movies Setup
+
+Populating the Movies Database
+
+The project includes a movies.json file containing a collection of movie data. You can use this file to populate the movies table in your database. Here's how to do it:
+
+    Ensure you have set up your database correctly and have the necessary environment variables in your .env file, especially the DATABASE_URL.
+
+    Use a script or a database management tool to import the data from movies.json into your movies table. The exact method will depend on the database system and tools you are using.
+
+    Verify that the data has been correctly imported into your database and is accessible from your application.
+
+This step is crucial for having a pre-filled database of movies, which will allow you to test and use the application's features that interact with this data.
+
+
+
 ## Getting Started
 
 First, run the development server:

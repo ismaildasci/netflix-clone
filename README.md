@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Live Preview of the Application
 
-[Netflix Clone Live Preview](https://netflix-clone.dasci.dev)
+[Netflix Clone Live Preview](https://moovie-demo.dasci.dev)
 
 ## Environment Setup
 
